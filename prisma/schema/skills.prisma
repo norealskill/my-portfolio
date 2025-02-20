@@ -1,0 +1,11 @@
+model Skills {
+    skillId     Int     @id     @default(autoincrement())
+    name        String
+    rating      Int
+    category    Category        @default(PROGRAMMING)
+}
+
+enum Category {
+    PROGRAMMING
+    SOFT_SKILL
+}
