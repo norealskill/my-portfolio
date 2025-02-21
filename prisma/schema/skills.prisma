@@ -1,8 +1,10 @@
 model Skills {
     skillId     Int     @id     @default(autoincrement())
     name        String
-    rating      Int
+    proficiency Int
     category    Category        @default(PROGRAMMING)
+    
+    @@map("skills")
 }
 
 enum Category {
